@@ -1,4 +1,5 @@
 import Avatar from "./Avatar";
+import User from "./User";
 
 function Tweet({ user, timestamp, message}) {
   return (
@@ -7,8 +8,8 @@ function Tweet({ user, timestamp, message}) {
       <div className="body">
         <div className="top">
           <span className="user">
-            <span className={"name"}>{user.name}</span>
-            <span className="handle">{user.handle}</span>
+            <User name={user.name} />
+            <User handle={user.handle} />
           </span>
 
           <span className="timestamp">{timestamp}</span>
