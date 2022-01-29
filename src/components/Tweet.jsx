@@ -1,7 +1,9 @@
+import Avatar from "./Avatar";
+
 function Tweet({ user, timestamp, message}) {
   return (
     <div className="tweet">
-      <img src={user.image} className="profile" alt="profile" />
+      <Avatar image={user.image} />
       <div className="body">
         <div className="top">
           <span className="user">
