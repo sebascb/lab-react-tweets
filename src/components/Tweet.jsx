@@ -1,6 +1,7 @@
 import Avatar from "./Avatar";
 import User from "./User";
 import Timestamp from "./Timestamp";
+import Message from "./Message";
 
 function Tweet({ user, timestamp, message}) {
   return (
@@ -18,7 +19,9 @@ function Tweet({ user, timestamp, message}) {
           </span>
         </div>
 
-        <p className="message">{message} 🚀</p>
+        <p className="message">
+          <Message message={message} />
+        </p>
 
         <div className="actions">
           {/* Font Awesome icons */}
