@@ -1,6 +1,6 @@
-function Message ({ message }) {
+function Message (props) {
     return (
-        <p className="message"> {message} 🚀</p>
+        <p className="message"> {props.message} 🚀</p>
     )
 }
 export default Message;
